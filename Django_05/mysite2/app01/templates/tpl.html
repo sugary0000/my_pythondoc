@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<h1>模板语法的学习</h1>
+<li>姓名: {{ n1 }}</li>
+
+<div>{{ n2 }}</div>
+<div>{{ n2.0 }}</div>
+<div>{{ n2.1 }}</div>
+<div>{{ n2.2 }}</div>
+<div>列表循环:
+	{% for item in n2 %}
+		<span>{{ item }}</span>
+	{% endfor %}
+</div>
+<hr/>
+{{ n3 }}
+{{ n3.name }}
+{{ n3.salary }}
+{{ n3.role }}
+<ul>
+字典循序：
+	{% for k,v in n3.items %}
+		<li>{{ k }} = {{ v }}</li>
+	{% endfor %}
+</ul>
+<hr/>
+{{ n4 }}
+{{ n4.1.name }}
+{{ n4.1.salary }}
+{% for item in n4 %}
+	<div>{{ item.name }} {{ item.salary }}</div>
+{% endfor %}
+
+<hr/>
+{% if n1 == "sugary" %}
+	<h1>匹配成功</h1>
+{% else %}
+	<h1>匹配失败</h1>
+{% endif %}
+
+
+
+
+</body>
+</html>
