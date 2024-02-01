@@ -1629,3 +1629,4 @@ def depart_edit(request, nid):
 ![image-20240201224008063](https://gitee.com/sugary0000/typora_image_store/raw/master/typora_images/image-20240201224008063.png)
 修改后"保存"观察数据变化
 
+11
